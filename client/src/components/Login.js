@@ -22,7 +22,7 @@ class Footer extends Component {
                                             <div className="col-md-12">
                                                 <label>User Name</label>
                                                 <input className="form-control" type="text" id="txtUsername"
-                                                    onChange={() => onHandleChange()} />
+                                                    onChange={onHandleChange} />
                                             </div>
                                         </div>
                                     </div>

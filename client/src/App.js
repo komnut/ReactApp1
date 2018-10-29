@@ -23,9 +23,7 @@ class App extends Component {
   }
 
   resetInput() {
-    console.log(this.state)
-    this.setState = ({ username: "" });
-    this.setState = ({ password: "" });
+    this.setState({ username: "", password: "" });
     console.log(this.state)
   }
 
