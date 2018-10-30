@@ -1,33 +1,27 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from "reactstrap";
 
 class Content extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { firstName: '', lastName: '' };
-
-        this.handleChange = this.handleChange.bind(this);
-    }
-
-    handleChange(event) {
-        event.target.id === "txt_fName" && this.setState({ firstName: event.target.value });
-        event.target.id === "txt_lName" && this.setState({ lastName: event.target.value });
+        this.state = { aaa: "aaa" }
     }
 
     render() {
+        // const currentUser = this.props.user;
+
         return (
-            <div className="container-fluid">
-                <label>
-                    First Name:
-              <input type="text" id="txt_fName" value={this.state.firstName} onChange={this.handleChange} />
-                </label>
-                <label>
-                    Last Name:
-              <input type="text" id="txt_lName" value={this.state.lastName} onChange={this.handleChange} />
-                </label>
-                <br />
-                <p>My name is {this.state.firstName + " " + this.state.lastName}</p>
-            </div>
+            <Container fluid>
+                <Row>
+                    <Col md="8">
+                        Content-Left
+                    </Col>
+                    <Col md="4">
+                        Content-Right
+                   </Col>
+                </Row>
+            </Container>
         );
     }
 }
