@@ -5,7 +5,7 @@ class Content extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { aaa: "aaa" }
+        this.state = { content: "Content" }
     }
 
     render() {
@@ -14,12 +14,9 @@ class Content extends Component {
         return (
             <Container fluid>
                 <Row>
-                    <Col md="8">
-                        Content-Left
+                    <Col md="12" className="text-center">
+                        {this.state.content}
                     </Col>
-                    <Col md="4">
-                        Content-Right
-                   </Col>
                 </Row>
             </Container>
         );
