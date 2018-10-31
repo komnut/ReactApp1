@@ -10,12 +10,14 @@ class Content extends Component {
 
     render() {
         // const currentUser = this.props.user;
-
+        console.log(this.props)
         return (
             <Container fluid>
                 <Row>
                     <Col md="12" className="text-center">
                         {this.state.content}
+                        <br />
+                        Speed = {this.props.user.speed}
                     </Col>
                 </Row>
             </Container>

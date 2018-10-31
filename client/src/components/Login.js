@@ -53,6 +53,17 @@ class Footer extends Component {
                                     <FormGroup>
                                         <Row>
                                             <Col md="12">
+                                                <label>Speed</label>
+                                                <input className="form-control"
+                                                    type="text"
+                                                    disabled
+                                                    value={this.props.speed} />
+                                            </Col>
+                                        </Row>
+                                    </FormGroup>
+                                    <FormGroup>
+                                        <Row>
+                                            <Col md="12">
                                                 <label>User Name</label>
                                                 <input className="form-control"
                                                     type="text"
