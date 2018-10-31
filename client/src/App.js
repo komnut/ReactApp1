@@ -12,7 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLogin: 0,
+      isLogin: 1,
       userName: "",
       speed: 10
     }
